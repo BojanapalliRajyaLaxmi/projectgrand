@@ -36,6 +36,7 @@ ul>li{
     border-radius: 20px;
     margin: 5px;
 }
+
 input:checked +ul{
     visibility: visible;
 }
@@ -51,6 +52,7 @@ label{
     position: relative;
     right:-50px;
     font-size: 30px;
+    z-index: -11;
     font-weight: bolder;
     color: maroon;
 }
@@ -94,9 +96,7 @@ button{
 background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 outline: none;
 }
-
-  
-   @media screen and (min-width:1024px) {
+@media screen and (min-width:1024px) {
     .middle2{
         display: flex;;
         grid-template-columns: 300px,700px;
@@ -113,10 +113,11 @@ outline: none;
         padding: 20px;
         text-align:left;
     }
-    .head>.logo{
+    .logo{
         position: relative;
         top: 10px;
-        left: -550px;    
+        left: -500px;   
+        text-align: end; 
     }
     
    }
@@ -228,32 +229,22 @@ iframe{
         border: none;
         position: relative;
         left: 150px; 
-       
     }
     .head > ul>li>a{
         margin: 10px;
         padding: 10px;
         background-color: transparent black;
     }
-    /* .head > ul>li:hover{
-        background-color: #D9AFD9;
-    } */
     label{
         visibility: hidden;
     }
-    .logo{
+    .head>.logo{
         position: relative;
         top: -30px;
-        left: -490px;
+        left: -500px;
         text-align: center;
         border-radius: 20px;
         padding: 5px;
-    }
-    .logo:hover{
-        background-color: #8EC5FC;
-        box-shadow: inset 2px 2px 20px rgb(224, 135, 135);
-        transform: scale(1.1);
-        transition: all .5s;
     }
 }
 @media screen and (min-width:1024px) {
@@ -265,6 +256,12 @@ iframe{
     position: relative;
     left:300px;
     font-size: 18px;
+}
+    .head>.logo{
+    position: relative;
+    left: -550px;
+    top: 6px;
+    text-align: start;
 }}
 @media screen and (min-width:768px) {
     .nav{
@@ -292,9 +289,6 @@ iframe{
     
 }
 @media screen and (min-width:1044px){
-    .head >.logo{
-        font-size: 32px;
-    }
     li>a{
         position: relative;
         left: 430px;
@@ -330,3 +324,12 @@ iframe{
     }
     
 }
+@media screen and (min-width:425px) {
+    .logo{
+        position: absolute;
+        top: -30px;
+        right: 200px;
+    }
+    
+}
+

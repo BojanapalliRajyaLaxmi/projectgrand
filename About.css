@@ -23,9 +23,7 @@ ul{
     float: left;
     margin: 20px;
 }
-ul>li:hover{
-    background-color: #7edbdc;
-}
+
 a{
     text-decoration: none;
     color: black;
@@ -55,12 +53,10 @@ label{
 .logo{
     position: relative;
     right:-50px;
+    z-index: -11;
     font-size: 30px;
     font-weight: bolder;
     color: maroon;
-}
-.logo:hover{
-    transform: scale(2);
 }
 
 .middle1{
@@ -94,7 +90,11 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 outline: none;
 border-radius: 20px;
 }
-
+.text>button:hover{
+    box-shadow: 2px 2px 20px white,-2px 2px 20px white;
+    transform: scale(1.1);
+    transition: all .5s;
+}
 .block1{
     height: 300px;
     width: 300px;
@@ -169,7 +169,7 @@ border-radius: 20px;
     .logo{
         position: relative;
         top: -30px;
-        left: -490px;
+        left: -400px;
         text-align: center;
 
     }
@@ -187,6 +187,7 @@ border-radius: 20px;
     .head>ul>li{
         left: 300px;
         font-size: 18px;
+        margin-left: 0px;
     }
 .blocks{
     margin: 10px;
@@ -231,6 +232,11 @@ border-radius: 20px;
         display: flex;
         gap: 20px;
     }
+    .logo{
+        position: relative;
+        top: 6px;
+        margin-right: 10px;
+    }
    
 }
 @media screen and (min-width:1044px) {
@@ -251,4 +257,18 @@ border-radius: 20px;
     .content>p{
         width: 700px;
     }
+}
+@media screen and (min-width:425px) {
+    .head>.logo{
+        position: absolute;
+        top: -30px;
+        right: 200px;
+    }
+    
+}
+@media screen and (min-width:2560px) {
+    .logo{
+        top: 2%;
+    }
+    
 }
