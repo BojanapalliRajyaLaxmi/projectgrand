@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+background-repeat: no-repeat;
+}
+
+.navigation{
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    height: 60px;
+    margin: 30px;
+    position:sticky;
+    top: 20px;
+    padding: 10px;
+}
+ul{
+    visibility: hidden;
+    float: left;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+}
+ul>li{
+    padding: 10px;
+    border: 1px;
+    border-style: groove;
+    border-radius: 20px;
+    margin: 5px;
+}
+input:checked +ul{
+    visibility: visible;
+}
+input{
+    visibility: hidden;
+}
+label{
+    font-size: 30px;
+    margin: 10px;
+    color: #97D9E1;
+}
+.logo{
+    position: relative;
+    right:-50px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: maroon;
+}
+
+.middle1{
+    background-color: rgb(0, 0,0,.7);
+}
+.page1{
+    background-image: url(./templatemo_homeicon.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position:center;
+    min-height: 16em;
+    min-width: 20em;
+}
+.text>button{
+    border-radius: 20px;
+}
+.text>button:hover{
+    box-shadow: 2px 2px 20px white,-2px 2px 20px white;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.text>h1{
+    font-size: 22px;
+    text-align: start;
+    color:rgb(188, 127, 13);
+}
+.text>p{
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    margin: 20px;
+    line-height: 1.5;
+}
+button{
+    margin: 20px;
+    padding: 10px;
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+outline: none;
+}
+
+  
+   @media screen and (min-width:1024px) {
+    .middle2{
+        display: flex;;
+        grid-template-columns: 300px,700px;
+
+    }
+    .box3{
+        height: 480px; 
+    }
+    .boxa{
+        width: 300px;
+        display: flex;
+        width: 700px;
+        gap: 60px;
+        padding: 20px;
+        text-align:left;
+    }
+    .head>.logo{
+        position: relative;
+        top: 10px;
+        left: -550px;    
+    }
+    
+   }
+.box1,.box2{
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+}
+.box1 > .box1text,.box2> .box2text{
+    padding: 20px;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+box-shadow: 2px 2px 20px white,-2px -2px 20px white;
+    text-align: justify;
+}
+:is(.box1text,.box2text)>span{
+    float: right;
+}
+:is(.box1text,.box2text):hover{
+    transform: scale(1.2);
+    transition: all 2s;
+}
+@media screen and (min-width:768px) {
+    .box1,.box2{
+       margin-left: 30%;
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .box1,.box2{
+        margin-left: 20px;
+    }
+    
+}
+.box3{
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+.boxa{
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid rgb(197, 191, 191);
+}
+.boxa:hover{
+    filter: brightness(50%);
+    box-shadow:inset 2px 2px 20px black;
+}
+.middle2{
+    margin: 20px;
+}
+.boxa>*{
+    margin: 5px;
+    line-height: 1.5;
+}
+.boxatext>h2{
+    font-size: 20px;
+}
+.boxatext>p{
+    font-size: 12px;
+}
+.boxatext>.b3{
+    text-align: center;
+}
+.boxa>figure>img{
+    height: 120px;
+    margin-left: 70px;
+}
+
+@media screen and (min-width:768px) {
+    :is(.boxa>figure>img){
+        margin-left: 40%;
+    }
+    .boxatext>h2{
+        margin-left: 30%;
+    }
+    
+}
+.nav{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+.nav>li>a{
+    padding: 0px;
+}
+
+iframe{
+    min-height: 700px;
+    vertical-align: top;
+}
+.nav>li{
+    list-style-type: none;
+}
+.foottext{
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+    .head > ul>li{
+        visibility:visible;
+        display:inline;
+        padding: 0;
+        font-weight: bolder;
+        border: none;
+        position: relative;
+        left: 150px; 
+       
+    }
+    .head > ul>li>a{
+        margin: 10px;
+        padding: 10px;
+        background-color: transparent black;
+    }
+    /* .head > ul>li:hover{
+        background-color: #D9AFD9;
+    } */
+    label{
+        visibility: hidden;
+    }
+    .logo{
+        position: relative;
+        top: -30px;
+        left: -490px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .logo:hover{
+        background-color: #8EC5FC;
+        box-shadow: inset 2px 2px 20px rgb(224, 135, 135);
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+}
+@media screen and (min-width:1024px) {
+    .middle1{
+     display: flex;
+     padding: 20px;
+    }
+.head>ul>li{
+    position: relative;
+    left:300px;
+    font-size: 18px;
+}}
+@media screen and (min-width:768px) {
+    .nav{
+        width: 40%;
+        transform: rotate(90deg);
+        position: relative;
+        top:180px;
+        border-radius: 20px;
+    }
+    iframe{
+        margin-left: 20%;
+    }
+    
+    
+}
+@media screen and (min-width:1024px) {
+    .nav{
+        top: 220px;
+        left: -50px;
+    }
+    iframe{
+        margin-left: 15%;
+        width: 850px;
+    }
+    
+}
+@media screen and (min-width:1044px){
+    .head >.logo{
+        font-size: 32px;
+    }
+    li>a{
+        position: relative;
+        left: 430px;
+        padding: 10px;
+    }
+    .middle2{
+        margin-left: 10%;
+    }
+    .boxa{
+        width: 900px;
+        text-align: start;
+    
+    }
+    .nav>li{
+    position: relative;
+    top: 0px;        
+    }
+    iframe{
+        width: 1060px;
+        display: flex;
+    }
+    .middle3.p{
+        width: 200px;
+    }
+    .nav>li{
+        left:-400px;
+        width: 100px;
+    }
+    .nav{
+        width: 400px;
+        height: 50px;
+        margin-left: 5%;
+    }
+    
+}
